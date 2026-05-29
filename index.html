@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Clash Royale</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a2536;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background: linear-gradient(135deg, #1f3c6d, #0f1b29);
+            border-bottom: 4px solid #f1c40f;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #f1c40f;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Seções */
+        section {
+            background-color: #243447;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #f1c40f;
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Grid de Raridades de Cartas */
+        .grid-cartas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #1f2d3d;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            border-top: 5px solid #fff;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comum { border-color: #bdc3c7; }
+        .rara { border-color: #3498db; }
+        .epica { border-color: #9b59b6; }
+        .lendaria { border-color: #e67e22; }
+
+        .card h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Dicas Básicas */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #1f2d3d;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #2ecc71;
+            border-radius: 0 6px 6px 0;
+        }
+
+        li strong {
+            color: #2ecc71;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f1b29;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à Arena Clash Royale</h1>
+        <p>Estratégia, Elixir e Vitórias de Três Coroas!</p>
+    </header>
+
+    <div class="container">
+
+        <section id="sobre">
+            <h2>O que é o Clash Royale?</h2>
+            <p>Clash Royale é um jogo de estratégia em tempo real desenvolvido pela Supercell. Nele, os jogadores combinam cartas de tropas, feitiços e defesas em um deck de 8 cartas para duelarem em arenas. O objetivo principal é destruir as torres do adversário enquanto defende as suas próprias.</p>
+        </section>
+
+        <section id="raridades">
+            <h2>Tipos de Raridades de Cartas</h2>
+            <p>As cartas no jogo são divididas em diferentes níveis de raridade, cada uma com suas características e custos de atualização:</p>
+            
+            <div class="grid-cartas">
+                <div class="card comum">
+                    <h3>Comuns</h3>
+                    <p>Fáceis de encontrar e equilibradas. Ex: Cavaleiro, Flechas.</p>
+                </div>
+                <div class="card rara">
+                    <h3>Raras</h3>
+                    <p>Possuem funções táticas importantes. Ex: Corredor, Bola de Fogo.</p>
+                </div>
+                <div class="card epica">
+                    <h3>Épicas</h3>
+                    <p>Mecânicas únicas e alto impacto. Ex: P.E.K.K.A, Bruxa.</p>
+                </div>
+                <div class="card lendaria">
+                    <h3>Lendárias</h3>
+                    <p>Habilidades especiais exclusivas. Ex: O Tronco, Mago Elétrico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dicas">
+            <h2>Dicas para Subir de Arena</h2>
+            <ul>
+                <li><strong>Gerencie seu Elixir:</strong> Nunca gaste todo o seu elixir logo no início da partida sem um plano defensivo.</li>
+                <li><strong>Equilibre seu Deck:</strong> Garanta que seu deck tenha uma condição de vitória (como o Gigante ou Corredor), defesas aéreas e feitiços.</li>
+                <li><strong>Aprenda a Contra-atacar:</strong> Use suas defesas para criar uma vantagem de elixir e transforme essa defesa em um ataque poderoso.</li>
+                <li><strong>Conheça o Posicionamento:</strong> Atrair tropas inimigas para o centro da arena faz com que as duas torres do rei causem dano a elas.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Página de Fã de Clash Royale. Este site não é afiliado à Supercell.</p>
+    </footer>
+
+</body>
+</html>
